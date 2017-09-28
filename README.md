@@ -68,10 +68,12 @@ the HTML documention for the <code>List</code> interface is available
 ### Non-Functional Requirements
 
 * **Storage:** Each list implementation should be backed by an array of type
-  ```Object[]``` cast to type ```T[]```. For example:
+  ```T[]```. Since it is not possible to directly instantiate a generic array in
+  Java, a utility method is provided (see ```Utility.<T>array```) for the
+  creation of new generic arrays. Here is an example of how to use this method:
 
   ```java
-  T[] array = (T[]) new Object[length];
+  T[] array = Utility.<T>array(length);
   ```
 
 * **UML Diagram:**
