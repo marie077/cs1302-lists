@@ -11,11 +11,6 @@ beginning your project.**
 
 todo
 
-## Learning Outcomes
-
-* outcome 1
-* outcome 2
-
 ## Academic Honesty
 
 You agree to the Academic Honesty policy as outlined in the course syllabus and
@@ -32,12 +27,51 @@ through **Piazza** and **eLC** so please keep a lookout for them.
 
 ## Project Description
 
-todo
-
-## Interface Documentation
-
+short description todo.
 In addition to the Javadoc comments in 
 <a href="src/main/java/cs1302/p3/List.java"><code>cs1302.p3.List</code></a>,
-the HTML documention is available 
+the HTML documention for the <code>List</code> interface is available 
 <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/List.html">here</a>.
+
+### Learning Outcomes
+
+* outcome 1
+* outcome 2
+
+### Functional Requirements
+
+* todo
+* todo
+
+### Non-Functional Requirements
+
+* todo
+* todo
+
+## Submission Instructions
+
+You will be submitting your project via Nike before the deadline indicated
+near the top of this document. Make sure your project files
+are on <code>nike.cs.uga.edu</code>. Change into the parent directory of your
+project directory. If you've followed the instructions provided in this document, 
+then the name of your project directory is likely <code>cs1302-lists</code>. 
+While in your project's parent directory, execute the following command: 
+
+```
+$ submit cs1302-lists cs1302a
+```
+
+It is also a good idea to email a copy to yourself. To do this, simply execute 
+the following command, replacing the email address with your email address:
+
+```
+$ tar zcvf cs1302-lists.tar.gz cs1302-lists
+$ mutt -s "[cs1302] cs1302-lists" -a cs1302-lists.tar.gz -- your@email.com < /dev/null
+```
+
+If you have any problems submitting your project then please send a private
+post to your instructor via the course Piazza as soon as possible. However, 
+creating a post about something like this the day or night the project is due 
+is probably not the best idea.
+
 
