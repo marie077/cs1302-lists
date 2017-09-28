@@ -45,8 +45,23 @@ the HTML documention for the <code>List</code> interface is available
 
 ### Non-Functional Requirements
 
-* todo
-* todo
+* **UML Diagram:**
+* **Javadoc Documentation:**
+* **In-line Documentation:**
+
+### Grading
+
+This project will be graded using unit tests that will not be made available
+before the project deadline. It is paramount that you do not modify the
+<code>List</code> interface provided by the project's skeleton code in any
+way. It is also very important that you follow the package and naming
+conventions for the <code>ArrayList</code> and <code>SortedArrayList</code>
+classes described in this project description. Modifying the provided 
+interface and or not following the naming conventions outlined in this
+project description will cause the unit tests to automatically fail. 
+
+TL;DR - Do not modify the interface; Follow naming conventions. If not, then
+your project will not be graded.
 
 ## Submission Instructions
 
