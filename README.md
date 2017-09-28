@@ -69,13 +69,13 @@ the HTML documention for the <code>List</code> interface is available
 
 * **Storage:** Each list implementation should be backed by an array of type
   ```T[]```. Since it is not possible to directly instantiate a generic array in
-  Java, a utility method called ```Utility.<T>array``` in
+  Java, a utility method called ```Utility.<T>newArray``` in
   <a href="src/main/java/cs1302/p3/Utility.java">```Utility.java```</a>
   is provided for the creation of new generic arrays. Here is an example of how 
   to use this method:
 
   ```java
-  T[] array = Utility.<T>array(length);
+  T[] array = Utility.<T>newArray(length);
   ```
 
 * **UML Diagram:**

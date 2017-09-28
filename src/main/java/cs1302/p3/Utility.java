@@ -16,9 +16,9 @@ public class Utility {
      * @return new array of the specified type and length
      */
     @SuppressWarnings("unchecked")
-    public static <T> T[] array(int length) {
+    public static <T> T[] newArray(int length) {
 	return (T[]) new Object[length];
-    } // array
+    } // newArray
 
 } // Utility
 
