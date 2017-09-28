@@ -29,7 +29,7 @@ through **Piazza** and **eLC** so please keep a lookout for them.
 
 short description todo.
 In addition to the Javadoc comments in 
-<a href="src/main/java/cs1302/p3/List.java"><code>cs1302.p3.List</code></a>,
+<a href="src/main/java/cs1302/p3/List.java">```cs1302.p3.List```</a>,
 the HTML documention for the <code>List</code> interface is available 
 <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/List.html">here</a>.
 
@@ -69,8 +69,10 @@ the HTML documention for the <code>List</code> interface is available
 
 * **Storage:** Each list implementation should be backed by an array of type
   ```T[]```. Since it is not possible to directly instantiate a generic array in
-  Java, a utility method is provided (see ```Utility.<T>array```) for the
-  creation of new generic arrays. Here is an example of how to use this method:
+  Java, a utility method called ```Utility.<T>array``` in
+  <a href="src/main/java/cs1302/p3/Utility.java">```Utility.java```</a>
+  is provided for the creation of new generic arrays. Here is an example of how 
+  to use this method:
 
   ```java
   T[] array = Utility.<T>array(length);
