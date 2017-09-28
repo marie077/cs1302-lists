@@ -28,7 +28,8 @@ import java.util.Iterator;
 public interface List<T> {
 
     /**
-     * Appends the specified element to the end of this list.
+     * Adds the specified element to the list at an implementation-specific
+     * position.
      * @param elem element to be inserted
      * @throws NullPointerException if elem is null
      */
@@ -142,5 +143,4 @@ public interface List<T> {
     int indexOf(T elem) throws NullPointerException; 
 
 } // List<T>
-
 
