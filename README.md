@@ -40,8 +40,25 @@ the HTML documention for the <code>List</code> interface is available
 
 ### Functional Requirements
 
-* todo
-* todo
+* **```ArrayList<T>```:** Create the ```cs1302.p3.ArrayList``` generic class
+  with type parameter ```T``` such that it properly implements the 
+  ```cs1302.p3.List<T>``` interface with the requirements listed below. 
+
+* **```SortedArrayList<T extends Comparable<T>>```: ** Create the 
+  ```cs1302.p3.SortedArrayList``` generic class with bounded type parameter 
+  ```T``` such that it properly implements the ```cs1302.p3.List<T>``` 
+  interface with the requirements listed below.
+
+  * The generic type parameter is bounded by ```java.util.Comparable<T>```
+    in order to enable comparisons between existing and or prospective 
+    elements of the list.
+
+  * The ```add(T)``` and ```add(int, T)``` methods should be implemented
+    such that elements are added to the list in sorted order, regardless
+    of the index position specified. The Javadoc documentation for these
+    methods should clearly indicate this behavior.
+
+  * todo
 
 ### Non-Functional Requirements
 
