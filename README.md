@@ -42,25 +42,37 @@ the HTML documention for the <code>List</code> interface is available
 
 * **```ArrayList<T>```:** Create the ```cs1302.p3.ArrayList``` generic class
   with type parameter ```T``` such that it properly implements the 
-  ```cs1302.p3.List<T>``` interface with the requirements listed below. 
+  ```cs1302.p3.List<T>``` interface with the requirements listed below.
+
+  * The generic type parameter is not bounded.
+
+  * The ```add(T)``` method adds an element to the end of the list. The Javadoc
+    documentation for this methods should clearly indicate this behavior.
 
 * **```SortedArrayList<T extends Comparable<T>>```:** Create the 
   ```cs1302.p3.SortedArrayList``` generic class with bounded type parameter 
   ```T``` such that it properly implements the ```cs1302.p3.List<T>``` 
-  interface with the requirements listed below.
+  interface with the requirements listed below. 
 
   * The generic type parameter is bounded by ```java.util.Comparable<T>```
     in order to enable comparisons between existing and or prospective 
     elements of the list.
 
-  * The ```add(T)``` and ```add(int, T)``` methods should be implemented
-    such that elements are added to the list in sorted order, regardless
-    of the index position specified. The Javadoc documentation for these
-    methods should clearly indicate this behavior.
+  * The ```add(T)``` and ```add(int, T)``` methods are implemented such that 
+    elements are added to the list in sorted order, regardless of the index 
+    position specified. The Javadoc documentation for these methods should 
+    clearly indicate this behavior.
 
   * todo
 
 ### Non-Functional Requirements
+
+* **Storage:** Each list implementation should be backed by an array of type
+  ```Object[]``` cast to type ```T[]```. For example:
+
+  ```java
+  T[] array = (T[]) new Object[length];
+  ```
 
 * **UML Diagram:**
 * **Javadoc Documentation:**
