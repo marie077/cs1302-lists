@@ -34,3 +34,10 @@ through **Piazza** and **eLC** so please keep a lookout for them.
 
 todo
 
+## Interface Documentation
+
+In addition to the Javadoc comments in 
+<a href="src/main/java/cs1302/p3/List.java"><code>cs1302.p3.List</code></a>,
+the HTML documention is available 
+<a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/List.html">here</a>.
+
