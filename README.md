@@ -44,7 +44,7 @@ the HTML documention for the <code>List</code> interface is available
   with type parameter ```T``` such that it properly implements the 
   ```cs1302.p3.List<T>``` interface with the requirements listed below. 
 
-* **```SortedArrayList<T extends Comparable<T>>```: ** Create the 
+* **```SortedArrayList<T extends Comparable<T>>```:** Create the 
   ```cs1302.p3.SortedArrayList``` generic class with bounded type parameter 
   ```T``` such that it properly implements the ```cs1302.p3.List<T>``` 
   interface with the requirements listed below.
