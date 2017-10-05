@@ -35,8 +35,9 @@ the HTML documention for the <code>List</code> interface is available
 
 ### Learning Outcomes
 
-* outcome 1
-* outcome 2
+* Implement generic classes according to an interface (1302-LO1).
+* Utilitze inheritance and polymorphism in a software project (1302-LO3-LO4).
+* Test your implementation using unit tests (1302-LO9).
 
 ### Functional Requirements
 
