@@ -20,7 +20,7 @@ public class Box<T> {
      * Box<String>[] boxes = Box.<String>array(10);
      * }
      * 
-     * @param <T> the type of elements in each box
+     * @param <U> the type of elements in each box
      * @param length the length of the array to create
      * @return an array of box objects
      */
