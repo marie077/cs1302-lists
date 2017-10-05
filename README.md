@@ -25,10 +25,14 @@ development on nike.
 Updates will be posted here. You will be informed about any changes 
 through **Piazza** and **eLC** so please keep a lookout for them.
 
-* **2017-10-05:** Updated ```pom.xml``` in skeleton code to support
+* **2017-10-05 (a):** Updated ```pom.xml``` in skeleton code to support
   Java 8 and JUnit 5, made a slight modification to the ```List<T>```
   interface to better facilitate the extra credit, and added a unit
   test for the ```Box<T>``` class (can test with ```$ mvn test```).
+
+* **2017-10-05 (b):** Added a method to ```Box<T>``` to aid in the
+  creation of a generic ```Box<T>``` array. The project description has
+  also been updated to reflect this addition.
 
 ## Project Description
 
