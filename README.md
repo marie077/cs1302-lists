@@ -31,8 +31,8 @@ through **Piazza** and **eLC** so please keep a lookout for them.
 
 ## Project Description
 
-short description todo.
-In addition to the Javadoc comments in 
+In this project, you will be providing two different implementations of
+a ```List``` interface. In addition to the Javadoc comments in 
 <a href="src/main/java/cs1302/p3/List.java">```cs1302.p3.List```</a>,
 the HTML documention for the <code>List</code> interface is available 
 <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/List.html">here</a>.
