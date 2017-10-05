@@ -9,7 +9,7 @@ beginning your project.**
 
 ## Due Dates
 
-todo
+This project is **DUE FRI 2017-10-20 @ 11:55 PM EST**.
 
 ## Academic Honesty
 
@@ -63,8 +63,6 @@ the HTML documention for the <code>List</code> interface is available
     position specified. The Javadoc documentation for these methods should 
     clearly indicate this behavior.
 
-  * todo
-
 ### Non-Functional Requirements
 
 * **Storage:** Each list implementation should be backed by an array of type
@@ -73,9 +71,14 @@ the HTML documention for the <code>List</code> interface is available
   provided for you in 
   <a href="src/main/java/cs1302/p3/Box.java">```cs1302.p3.Box```</a>. 
 
-* **UML Diagram:**
-* **Javadoc Documentation:**
-* **In-line Documentation:**
+* **Javadoc Documentation:** Each method and class needs to be documented
+  using Javadoc comments. If a method overrides an inheritted method that is
+  already documented, then that method only needs a Javadoc comment if the
+  implementation differs from the existing documentation. 
+
+* **In-line Documentation:** Code blocks should be adequately documented
+  using in-line comments. This is especially necessary when a block of code
+  is not immediately understood by a reader (e.g., the grader). 
 
 ### Grading
 
@@ -88,8 +91,8 @@ classes described in this project description. Modifying the provided
 interface and or not following the naming conventions outlined in this
 project description will cause the unit tests to automatically fail. 
 
-TL;DR - Do not modify the interface; Follow naming conventions. If not, then
-your project will not be graded.
+TL;DR - Do not modify the provided interfaces and classes; Follow naming 
+conventions. **If not, then your project will not be graded.**
 
 ## Submission Instructions
 
