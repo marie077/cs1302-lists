@@ -91,7 +91,9 @@ the HTML documention for the <code>List</code> interface is available
   <a href="src/main/java/cs1302/p3/Box.java">```cs1302.p3.Box```</a>.
   The HTML documention for the <code>Box</code> class is available 
   <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html">here</a>.
-  To create an array of type ```Box<T>[]``` use the static ```array``` method. 
+  To create an array of type ```Box<T>[]``` use the static 
+  <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html#array-int-">```array```</a>
+  method. 
 
 * **Javadoc Documentation:** Each method and class needs to be documented
   using Javadoc comments. If a method overrides an inheritted method that is
