@@ -26,7 +26,7 @@ Updates will be posted here. You will be informed about any changes
 through **Piazza** and **eLC** so please keep a lookout for them.
 
 * **2017-10-05:** Updated ```pom.xml``` in skeleton code to support
-  Java 8 and JUnit 5. Also made a slight modiciation to the ```List<T>```
+  Java 8 and JUnit 5. Also made a slight modification to the ```List<T>```
   interface to better facilitate the extra credit.
 
 ## Project Description
