@@ -32,5 +32,11 @@ public class BoxTest {
 	assertEquals(box.get(), TEST_STRING, "get() should return what is set(T)");
     } // testBox
 
+    @Test
+    void testBoxArray() {
+	Box<String>[] boxes = Box.<String>array(2);
+	assertTrue(true, "should be able to make box array");
+    } // testBoxArray
+
 } // BoxTest
 

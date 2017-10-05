@@ -10,6 +10,19 @@ package cs1302.p3;
  * @author Michael E. Cotterell
  */
 public class Box<T> {
+    
+    /**
+     * Creates an array of box objects of the specified type.
+     * 
+     * @param <T> the type of elements in each box
+     * @param length the length of the array to create
+     * @return an array of box objects
+     */
+    @SuppressWarnings("unchecked")
+    public static <U> Box<U>[] array(int length) {
+	Box<U>[] boxes = (Box<U>[]) new Box[length];
+	return boxes;
+    } // array
 
     private T elem = null;
 
