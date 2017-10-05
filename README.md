@@ -26,7 +26,8 @@ Updates will be posted here. You will be informed about any changes
 through **Piazza** and **eLC** so please keep a lookout for them.
 
 * **2017-10-05:** Updated ```pom.xml``` in skeleton code to support
-  Java 8 and JUnit 5.
+  Java 8 and JUnit 5. Also made a slight modiciation to the ```List<T>```
+  interface to better facilitate the extra credit.
 
 ## Project Description
 
@@ -53,6 +54,10 @@ the HTML documention for the <code>List</code> interface is available
   * The ```add(T)``` method adds an element to the end of the list. The Javadoc
     documentation for this methods should clearly indicate this behavior.
 
+  * **Extra Credit (5 points):** Override the ```iterator()``` method for your
+    ```ArrayList``` class as described in the ```List``` interface. This may 
+    require you to create an additional class that implements another interface.
+
 * **```SortedArrayList<T extends Comparable<T>>```:** Create the 
   ```cs1302.p3.SortedArrayList``` generic class with bounded type parameter 
   ```T``` such that it properly implements the ```cs1302.p3.List<T>``` 
@@ -66,6 +71,11 @@ the HTML documention for the <code>List</code> interface is available
     elements are added to the list in sorted order, regardless of the index 
     position specified. The Javadoc documentation for these methods should 
     clearly indicate this behavior.
+
+  * **Extra Credit (5 points):** Override the ```iterator()``` method for your
+    ```SortedArrayList``` class as described in the ```List``` interface. This 
+    may require you to create an additional class that implements another 
+    interface.
 
 ### Non-Functional Requirements
 

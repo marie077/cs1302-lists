@@ -113,10 +113,21 @@ public interface List<T> {
      * Students will need to properly create their own <code>Iterator</code> 
      * class for their list implementation and return an appropriate instance 
      * of it here.
+     *
+     * <p>
+     * This interface method may seem strange since it's not abstract. This is
+     * an example of a Java 8 (or higher) default method. See the link below
+     * for more information on default methods.
+     *
      * @return an iterator over the elements in this list in proper sequence
+     * @throws UnsupportedOperationException if the iterator operation is not 
+     *         supported by this list
      * @see <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html">java.util.Iterator</a>
+     * @see <a href="https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html">The Java™ Tutorials: Default Methods</a>
      */
-    Iterator<T> iterator();
+    default Iterator<T> iterator() throws UnsupportedOperationException {
+	throw new UnsupportedOperationException("iterator() not supported");
+    } // iterator()
 
     /** 
      * Removes the first occurrence of the specified element from this list, if 
