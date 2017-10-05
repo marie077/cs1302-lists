@@ -13,6 +13,12 @@ public class Box<T> {
     
     /**
      * Creates an array of box objects of the specified type.
+     *
+     * <p>
+     * Here is an example that creates a <code>bBox</code> array of length 10:
+     * {@code
+     * Box<String>[] boxes = Box.<String>array(10);
+     * }
      * 
      * @param <T> the type of elements in each box
      * @param length the length of the array to create
