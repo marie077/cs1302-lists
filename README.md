@@ -74,7 +74,7 @@ the HTML documention for the <code>List</code> interface is available
   does not allow the creation of generic arrays. The ```Box<T>``` class is
   provided for you in 
   <a href="src/main/java/cs1302/p3/Box.java">```cs1302.p3.Box```</a>.
-  The HTML documention for the <code>List</code> interface is available 
+  The HTML documention for the <code>Box</code> class is available 
   <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html">here</a>.
 
 * **Javadoc Documentation:** Each method and class needs to be documented
