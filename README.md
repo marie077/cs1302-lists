@@ -25,6 +25,9 @@ development on nike.
 Updates will be posted here. You will be informed about any changes 
 through **Piazza** and **eLC** so please keep a lookout for them.
 
+* **2017-10-05:** Updated ```pom.xml``` in skeleton code to support
+  Java 8 and JUnit 5.
+
 ## Project Description
 
 short description todo.
