@@ -110,7 +110,7 @@ project description will cause the unit tests to automatically fail.
 TL;DR - Do not modify the provided interfaces and classes; Follow naming 
 conventions. **If not, then your project will not be graded.**
 
-## Getting Skeleton Code
+## Getting/Updating Skeleton Code
 
 On Nike, execute the following terminal command in order to download the project
 files into sub-directory within your present working directory:
