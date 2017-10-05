@@ -68,15 +68,10 @@ the HTML documention for the <code>List</code> interface is available
 ### Non-Functional Requirements
 
 * **Storage:** Each list implementation should be backed by an array of type
-  ```T[]```. Since it is not possible to directly instantiate a generic array in
-  Java, a utility method called ```Utility.<T>newArray``` in
-  <a href="src/main/java/cs1302/p3/Utility.java">```Utility.java```</a>
-  is provided for the creation of new generic arrays. Here is an example of how 
-  to use this method:
-
-  ```java
-  T[] array = Utility.<T>newArray(length);
-  ```
+  ```Box<T>[]```. Ideally, we would want an array of type ```T[]```, but Java
+  does not allow the creation of generic arrays. The ```Box<T>``` class is
+  provided for you in 
+  <a href="src/main/java/cs1302/p3/Box.java">```cs1302.p3.Box```</a>. 
 
 * **UML Diagram:**
 * **Javadoc Documentation:**
