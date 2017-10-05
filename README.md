@@ -95,6 +95,31 @@ project description will cause the unit tests to automatically fail.
 TL;DR - Do not modify the provided interfaces and classes; Follow naming 
 conventions. **If not, then your project will not be graded.**
 
+## Getting Skeleton Code
+
+## How to Download the Project
+
+On Nike, execute the following terminal command in order to download the project
+files into sub-directory within your present working directory:
+
+```
+$ git clone https://github.com/cs1302uga/cs1302-lists.git
+```
+
+This should create a directory called <code>cs1302-lists</code> in
+your present working directory that contains the project files.
+
+If any updates to the project files are announced by your instructor, you can
+merge those changes into your copy by changing into your project's directory
+on Nike and issuing the following terminal command:
+
+```
+$ git pull
+```
+
+If you have any problems with any of these procedures, then please contact
+your instructor.
+
 ## Submission Instructions
 
 You will be submitting your project via Nike before the deadline indicated
