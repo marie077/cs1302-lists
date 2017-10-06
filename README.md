@@ -77,6 +77,10 @@ the HTML documention for the <code>List</code> interface is available
     position specified. The Javadoc documentation for these methods should 
     clearly indicate this behavior.
 
+  * **Design Choice:** Whether or not this class extends your ```ArrayList```
+    class is entirely up to you. The only functional requirements are that
+    it implements the interface as described above. 
+
   * **Extra Credit (5 points):** Override the ```iterator()``` method for your
     ```SortedArrayList``` class as described in the ```List``` interface. This 
     may require you to create an additional class that implements another 
