@@ -34,6 +34,10 @@ through **Piazza** and **eLC** so please keep a lookout for them.
   creation of a generic ```Box<T>``` array. The project description has
   also been updated to reflect this addition.
 
+* **2017-10-07:** Updated the ```add(int, T)``` method in the ```List<T>```
+  interface to account for indices that are out of bounds. See the udpated
+  documentation for that method for more details.
+
 ## Project Description
 
 In this project, you will be providing two different implementations of

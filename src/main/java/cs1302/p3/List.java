@@ -42,8 +42,10 @@ public interface List<T> {
      * @param index index at which the specified element is to be inserted
      * @param elem  element to be inserted
      * @throws NullPointerException if elem is null
+     * @throws IndexOutOfBoundsException if the index is out of range 
+     *         {@code (index < 0 || index > size())}
      */
-    void add(int index, T elem) throws NullPointerException;
+    void add(int index, T elem) throws NullPointerException, IndexOutOfBoundsException;
 
     /** 
      * Removes all of the elements from this list. The list will be empty after 

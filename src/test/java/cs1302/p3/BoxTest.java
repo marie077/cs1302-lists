@@ -36,6 +36,8 @@ public class BoxTest {
     void testBoxArray() {
 	Box<String>[] boxes = Box.<String>array(2);
 	assertTrue(true, "should be able to make box array");
+	boxes[0] = box;
+	assertTrue(true, "should be able to assign a box to the array");
     } // testBoxArray
 
 } // BoxTest
