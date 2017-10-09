@@ -35,8 +35,11 @@ through **Piazza** and **eLC** so please keep a lookout for them.
   also been updated to reflect this addition.
 
 * **2017-10-07:** Updated the ```add(int, T)``` method in the ```List<T>```
-  interface to account for indices that are out of bounds. See the udpated
+  interface to account for indices that are out of bounds. See the updated
   documentation for that method for more details.
+
+* **2017-10-09:** Updated the functional requirements to include information
+  on constructors.
 
 ## Project Description
 
@@ -63,6 +66,10 @@ the HTML documention for the <code>List</code> interface is available
   * The ```add(T)``` method adds an element to the end of the list. The Javadoc
     documentation for this methods should clearly indicate this behavior.
 
+  * You must explicitly define a default constructor for this class. The
+    initial size of an ```ArrayList<T>``` is ```0``` regardless of your
+    actual internal array capacity. 
+
   * **Extra Credit (5 points):** Override the ```iterator()``` method for your
     ```ArrayList``` class as described in the ```List``` interface. This may 
     require you to create an additional class that implements another interface.
@@ -80,6 +87,10 @@ the HTML documention for the <code>List</code> interface is available
     elements are added to the list in sorted order, regardless of the index 
     position specified. The Javadoc documentation for these methods should 
     clearly indicate this behavior.
+
+  * You must explicitly define a default constructor for this class. The
+    initial size of a ```SortedArrayList<T>``` is ```0``` regardless of your
+    actual internal array capacity. 
 
   * **Design Choice:** Whether or not this class extends your ```ArrayList```
     class is entirely up to you. The only functional requirements are that
@@ -101,7 +112,9 @@ the HTML documention for the <code>List</code> interface is available
   <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html">here</a>.
   To create an array of type ```Box<T>[]``` use the static 
   <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html#array-int-">```array```</a>
-  method. 
+  method. Your internal array capacity must always be at least the size of
+  the list that uses it. You should grow and shrink the array as needed. I
+  reccommend making private support methods to help streamline this process. 
 
 * **Javadoc Documentation:** Each method and class needs to be documented
   using Javadoc comments. If a method overrides an inheritted method that is
