@@ -56,8 +56,8 @@ public interface List<T> {
     /** 
      * Compares the specified list with this list for equality. Returns 
      * <code>true</code> if and only if the specified object is also a 
-     * <code>List</code> of the same list type, both lists have the same size, 
-     * and all corresponding pairs of elements in the two lists are equal.
+     * <code>List</code>, both lists have the same size, and all corresponding 
+     * pairs of elements in the two lists are equal.
      * If <code>list</code> is a list of the same list type, then students
      * may safely cast the object to the appropriat list type when implementing
      * this method.

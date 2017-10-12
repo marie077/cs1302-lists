@@ -268,6 +268,13 @@ Below are some frequently asked questions related to this project.
    implementation of the ```List<T>``` interface. It does not have to the
    same implementation as the calling object.
 
+   If ```list instanceof List``` is ```true```, then it is safe to cast the
+   reference to a ```List``` (e.g., ```List l = (List) list```). This will
+   give you access to the ```get(int)``` method via the casted reference
+   (e.g., ```l.get(0)```) for, potentially, the purpose of comparing it to
+   an element in the current list in the same position.
+
+
 3. **How do I include the interface's Javadoc for a method in addition to my own without copy/paste?**
 
    You can use the ```{@inheritDoc}``` tag near the end of the description
