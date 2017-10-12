@@ -41,13 +41,45 @@ through **Piazza** and **eLC** so please keep a lookout for them.
 * **2017-10-09:** Updated the functional requirements to include information
   on constructors.
 
+* **2017-10-12:** Updated the "<a href="#project-description">Project Description</a>"
+  and "<a href="#non-functional-requirements">Non-Functional Requirements</a>" 
+  sections to make some things a little more clear. A "<a href="#faq">FAQ</a>" 
+  section was also added at the end of this document with sample solutions and/or
+  suggestions for some frequently asked questions.
+
 ## Project Description
 
 In this project, you will be providing two different implementations of
-a ```List``` interface. In addition to the Javadoc comments in 
+a generic ```List``` interface, which defines different operations that one
+should be able to do with a *list*. A list is simply an object that represents 
+an ordered collection of elements. The list implementation can decide how the
+elements are stored internally so long as users are able to interact with
+those elements via the methods defined in the interface. In this way, a list
+is an example of an *abstract data type* (ADT). To put it another way: while 
+the implementor needs to undertand the specific details of the implementation
+(in order to write the code to make it happen), the user of a list does not. 
+The users simply interact with objects of the list implementation through
+the methods defined in the interface. 
+
+Each implementation will be a generic class with specific functional
+and non-functional requirements. These classes need to implement ```List<T>```
+and override its methods to provide their functionality. 
+
+In addition to the Javadoc comments in 
 <a href="src/main/java/cs1302/p3/List.java">```cs1302.p3.List```</a>,
-the HTML documention for the <code>List</code> interface is available 
+the HTML documention for the ```List<T>``` interface is available 
 <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/List.html">here</a>.
+Implementors should make sure that each method functions or behaves as described
+by its documentation, except in cases where a functional requirement changes
+the behavior of the method. Whenever an overridden method's behavor differs from
+how it's described in the ```List<T>``` interface, this new behavor should be 
+documented using Javadoc. 
+
+Implementors are always free to implement additional methods in addition
+to the ones defined by the interface. However, they should not assume that
+users will use them (even if declared with ```public``` visibility), since
+they are not defined in the interface. These additional methods may help
+avoid redundancy and promote code reuse within an implementation.
 
 ### Learning Outcomes
 
@@ -103,18 +135,29 @@ the HTML documention for the <code>List</code> interface is available
 
 ### Non-Functional Requirements
 
-* **Storage:** Each list implementation should be backed by an array of type
-  ```Box<T>[]```. Ideally, we would want an array of type ```T[]```, but Java
-  does not allow the creation of generic arrays. The ```Box<T>``` class is
-  provided for you in 
+* **Storage:** In general, when implementing an interface for a collection ADT
+  (i.e., something that represents objects that contain other objects), the
+  implementor gets to decide how the implementation stores the collection of
+  elements. For this project, each list implementation should store its elements
+  using an array of type ```Box<T>[]```. Ideally, we would want an array of type 
+  ```T[]```, but Java does not allow the creation of generic arrays. The 
+  ```Box<T>``` class provides a generic static method for the creation of arrays
+  with type ```Box<T>[]```. The ```Box<T>``` class is  provided to you in 
   <a href="src/main/java/cs1302/p3/Box.java">```cs1302.p3.Box```</a>.
-  The HTML documention for the <code>Box</code> class is available 
+  The HTML documention for the ```Box<T>``` class is available 
   <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html">here</a>.
-  To create an array of type ```Box<T>[]``` use the static 
+  Since users of an ADT implementation do not interact with the underlying
+  storage directly (and only through the methods defined in the interface),
+  this non-functional requirement is transparent to users. However, using an
+  array of generic "boxes", each containing an element of type ```T```, does increase
+  the level of abstraction for the implementor.  To create an array of type 
+  ```Box<T>[]``` use the static 
   <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html#array-int-">```array```</a>
-  method. Your internal array capacity must always be at least the size of
-  the list that uses it. You should grow and shrink the array as needed. I
-  reccommend making private support methods to help streamline this process. 
+  method. Since, in this project,  a list implementation is using its internal 
+  array as storage for its elements, the internal array capacity must always be at 
+  least the size of the list that uses it. You should grow and shrink the array 
+  as needed. It reccommended that you make support methods to help streamline this 
+  process as needed. 
 
 * **Javadoc Documentation:** Each method and class needs to be documented
   using Javadoc comments. If a method overrides an inheritted method that is
@@ -188,4 +231,42 @@ post to your instructor via the course Piazza as soon as possible. However,
 creating a post about something like this the day or night the project is due 
 is probably not the best idea.
 
+# Supplement
+
+## FAQ
+
+Below are some frequently asked questions related to this project.
+
+
+1. **What's the difference between ```throw``` and ```throws```?**
+   
+   From a user's perspective, when a method signature indicates that it ```throws```
+   an exception, this is an indication to users of that method that they should 
+   use a try-catch block when invoking that method, since an exceptional (and 
+   usually documented) case can occur. From an implementor's perspective, the 
+   ```throws``` keyword indicates that the method *may* ```throw``` an exception
+   under certain exceptional (and usually documented) cases. For example, if
+   a method's documentation indicates that it ```throws NullPointerException```
+   when a parameter called ```elem``` is ```null```, then the implementor might
+   place the following near the top of that method's implementaiton:
+
+   ```java
+   if (elem == null) throw new NullPointerException("elem cannot be null");
+   ```
+
+2. **How do I determine the type of ```Object list`` in the ```equals(Object)``` method?**
+
+   Ideally, you would check that ```list``` is an instance of ```List<T>```.
+   However, Java does not allow this since any ```List<T>``` gets erased to
+   ```List``` during type erasure due to the involvement of a generic type 
+   parameter. Instead, you need to check if ```list``` is an instance of the 
+   raw type ```List```. This will result in all elements being of ```list```
+   being treated as type ```Object```, regardless of their actual type. This
+   is perfectly okay since you will be performing equality tests between
+   elements of the current list and ```list``` using the ```equals(Object)```
+   method. This also means that ```list``` can be an object of any 
+   implementation of the ```List<T>``` interface. It does not have to the
+   same implementation as the calling object.
+
+Have a question? Please post it on the course Piazza.
 
