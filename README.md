@@ -268,5 +268,29 @@ Below are some frequently asked questions related to this project.
    implementation of the ```List<T>``` interface. It does not have to the
    same implementation as the calling object.
 
+3. **How do I include the interface's Javadoc for a method in addition to my own without copy/paste?**
+
+   You can use the ```{@inheritDoc}``` tag near the end of the description
+   in your method's Javadoc comment to include the original documentation.
+   For example, you might do the following:
+
+   ```java
+   /**
+    * Short one line description. This is the rest of the description. It may
+    * involve several sentences.
+    *
+    * <p>
+    * {@inheritDoc}
+    *
+    * @param p string called p (never write this)
+    */
+   public void foo(String p) { 
+       /** ... */ 
+   } // foo
+   ```
+
+   It is common practice to include the more specific documentation first, 
+   followed by more general documentation, if needed.
+
 Have a question? Please post it on the course Piazza.
 
