@@ -254,7 +254,7 @@ Below are some frequently asked questions related to this project.
    if (elem == null) throw new NullPointerException("elem cannot be null");
    ```
 
-2. **How do I determine the type of ```Object list`` in the ```equals(Object)``` method?**
+2. **How do I determine the type of ```Object list``` in the ```equals(Object)``` method?**
 
    Ideally, you would check that ```list``` is an instance of ```List<T>```.
    However, Java does not allow this since any ```List<T>``` gets erased to
