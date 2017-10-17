@@ -71,6 +71,7 @@ public interface List<T> {
      * @param index index of the element to return
      * @return the element at the specified position in this list
      * @throws IndexOutOfBoundsException if the index is out of range
+     *         {@code (index < 0 || index >= size())}
      */
     T get(int index) throws IndexOutOfBoundsException;
 
@@ -82,6 +83,7 @@ public interface List<T> {
      * @return the element previously at the specified position
      * @throws NullPointerException if the specified element is null
      * @throws IndexOutOfBoundsException if the index is out of range
+     *         {@code (index < 0 || index >= size())}
      */
     T set(int index, T elem) throws NullPointerException, IndexOutOfBoundsException;
 
