@@ -1,15 +1,15 @@
 # CSCI 1302 - Lists
 
 This document contains the description for the Lists project
-assigned to the students in the Fall 2017 CSCI 1302 classes
+assigned to the students in the Spring 2018 CSCI 1302 classes
 at the University of Georgia.
 
-**Please read the entirety of this file before
+**Read the entirety of this file before
 beginning your project.** 
 
 ## Due Dates
 
-This project is **DUE FRI 2017-10-20 @ 11:55 PM EDT**.
+This project is **DUE SUN 2018-03-04 @ 11:55 PM EDT**.
 
 ## Academic Honesty
 
@@ -24,28 +24,6 @@ development on nike.
 
 Updates will be posted here. You will be informed about any changes 
 through **Piazza** and **eLC** so please keep a lookout for them.
-
-* **2017-10-05 (a):** Updated ```pom.xml``` in skeleton code to support
-  Java 8 and JUnit 5, made a slight modification to the ```List<T>```
-  interface to better facilitate the extra credit, and added a unit
-  test for the ```Box<T>``` class (can test with ```$ mvn test```).
-
-* **2017-10-05 (b):** Added a method to ```Box<T>``` to aid in the
-  creation of a generic ```Box<T>``` array. The project description has
-  also been updated to reflect this addition.
-
-* **2017-10-07:** Updated the ```add(int, T)``` method in the ```List<T>```
-  interface to account for indices that are out of bounds. See the updated
-  documentation for that method for more details.
-
-* **2017-10-09:** Updated the functional requirements to include information
-  on constructors.
-
-* **2017-10-12:** Updated the "<a href="#project-description">Project Description</a>"
-  and "<a href="#non-functional-requirements">Non-Functional Requirements</a>" 
-  sections to make some things a little more clear. A "<a href="#faq">FAQ</a>" 
-  section was also added at the end of this document with sample solutions and/or
-  suggestions for some frequently asked questions.
 
 ## Project Description
 
@@ -301,3 +279,12 @@ Below are some frequently asked questions related to this project.
 
 Have a question? Please post it on the course Piazza.
 
+<hr/>
+
+[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
+
+<small>
+Copyright &copy; 2018 Michael E. Cotterell and the University of Georgia.
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
+The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
+</small>
