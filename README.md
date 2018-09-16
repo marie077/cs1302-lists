@@ -57,7 +57,7 @@ The users simply interact with objects of the list implementation through
 the methods defined in the interface. 
 
 Each implementation will be a generic class with specific functional
-and non-functional requirements. These classes need to implement ```List<T>```
+and non-functional requirements. These classes need to implement ```GenList<T>```
 and override its methods to provide their functionality. 
 
 In addition to the Javadoc comments in 
@@ -108,7 +108,7 @@ The actual functionality is tested using test cases.
     actual internal array capacity. 
 
   * **Extra Credit (5 points):** Override the ```iterator()``` method for your
-    ```ArrayList``` class as described in the ```List``` interface. This may 
+    ```ArrayGenList``` class as described in the ```List``` interface. This may 
     require you to create an additional class that implements another interface.
 
     **NOTE:** You do not need to implement the ```iterator()``` method if you
@@ -132,12 +132,12 @@ The actual functionality is tested using test cases.
     initial size of a ```SortedArrayGenList<T>``` is ```0``` regardless of your
     actual internal array capacity. 
 
-  * **Design Choice:** Whether or not this class extends your ```ArrayList```
+  * **Design Choice:** Whether or not this class extends your ```ArrayGenList```
     class is entirely up to you. The only functional requirements are that
     it implements the interface as described above. 
 
   * **Extra Credit (5 points):** Override the ```iterator()``` method for your
-    ```SortedArrayList``` class as described in the ```List``` interface. This 
+    ```SortedArrayList``` class as described in the ```GenList``` interface. This 
     may require you to create an additional class that implements another 
     interface.
 
@@ -351,7 +351,7 @@ Below are some frequently asked questions related to this project.
    However, Java does not allow this since any ```GenList<T>``` gets erased to
    ```GenList``` during type erasure due to the involvement of a generic type 
    parameter. Instead, you need to check if ```list``` is an instance of the 
-   raw type ```List```. This will result in all elements being of ```list```
+   raw type ```GenList```. This will result in all elements being of ```list```
    being treated as type ```Object```, regardless of their actual type. This
    is perfectly okay since you will be performing equality tests between
    elements of the current list and ```list``` using the ```equals(Object)```
