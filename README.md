@@ -47,13 +47,13 @@ and non-functional requirements. These classes need to implement ```List<T>```
 and override its methods to provide their functionality. 
 
 In addition to the Javadoc comments in 
-<a href="src/main/java/cs1302/p3/List.java">```cs1302.p3.List```</a>,
-the HTML documention for the ```List<T>``` interface is available 
-<a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/List.html">here</a>.
+<a href="src/main/java/cs1302/lists/GenList.java">```cs1302.lists.GenList```</a>,
+the HTML documention for the ```GenList<T>``` interface is available 
+<a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/lists/GenList.html">here</a>.
 Implementors should make sure that each method functions or behaves as described
 by its documentation, except in cases where a functional requirement changes
 the behavior of the method. Whenever an overridden method's behavor differs from
-how it's described in the ```List<T>``` interface, this new behavor should be 
+how it's described in the ```GenList<T>``` interface, this new behavor should be 
 documented using Javadoc. 
 
 Implementors are always free to implement additional methods in addition
@@ -70,9 +70,9 @@ avoid redundancy and promote code reuse within an implementation.
 
 ### Functional Requirements
 
-* **```ArrayList<T>```:** Create the ```cs1302.p3.ArrayList``` generic class
+* **```ArrayGenList<T>```:** Create the ```cs1302.p3.ArrayGenList``` generic class
   with type parameter ```T``` such that it properly implements the 
-  ```cs1302.p3.List<T>``` interface with the requirements listed below.
+  ```cs1302.lists.GenList<T>``` interface with the requirements listed below.
 
   * The generic type parameter is not bounded.
 
@@ -80,16 +80,19 @@ avoid redundancy and promote code reuse within an implementation.
     documentation for this methods should clearly indicate this behavior.
 
   * You must explicitly define a default constructor for this class. The
-    initial size of an ```ArrayList<T>``` is ```0``` regardless of your
+    initial size of an ```ArrayGenList<T>``` is ```0``` regardless of your
     actual internal array capacity. 
 
   * **Extra Credit (5 points):** Override the ```iterator()``` method for your
     ```ArrayList``` class as described in the ```List``` interface. This may 
     require you to create an additional class that implements another interface.
 
-* **```SortedArrayList<T extends Comparable<T>>```:** Create the 
-  ```cs1302.p3.SortedArrayList``` generic class with bounded type parameter 
-  ```T``` such that it properly implements the ```cs1302.p3.List<T>``` 
+    **NOTE:** You do not need to implement the ```iterator()``` method if you
+    are not doing the extra credit.
+
+* **```SortedArrayGenList<T extends Comparable<T>>```:** Create the 
+  ```cs1302.lists.SortedArrayGenList``` generic class with bounded type parameter 
+  ```T``` such that it properly implements the ```cs1302.lists.GenList<T>``` 
   interface with the requirements listed below. 
 
   * The generic type parameter is bounded by ```java.util.Comparable<T>```
@@ -102,7 +105,7 @@ avoid redundancy and promote code reuse within an implementation.
     clearly indicate this behavior.
 
   * You must explicitly define a default constructor for this class. The
-    initial size of a ```SortedArrayList<T>``` is ```0``` regardless of your
+    initial size of a ```SortedArrayGenList<T>``` is ```0``` regardless of your
     actual internal array capacity. 
 
   * **Design Choice:** Whether or not this class extends your ```ArrayList```
@@ -113,6 +116,9 @@ avoid redundancy and promote code reuse within an implementation.
     ```SortedArrayList``` class as described in the ```List``` interface. This 
     may require you to create an additional class that implements another 
     interface.
+
+    **NOTE:** You do not need to implement the ```iterator()``` method if you
+    are not doing the extra credit.
 
 ### Non-Functional Requirements
 
