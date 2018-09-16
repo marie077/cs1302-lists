@@ -151,7 +151,7 @@ not satisfied. In order to emphasize the importance of these requirements,
 non-compliance results in the full point amount being subtracted from your
 point total. That is, they are all or nothing. 
 
-* **Storage (100 points):** In general, when implementing an interface for a collection ADT
+* **(100 points) Box Storage:** In general, when implementing an interface for a collection ADT
   (i.e., something that represents objects that contain other objects), the
   implementor gets to decide how the implementation stores the collection of
   elements. For this project, each list implementation should store its elements
@@ -236,7 +236,7 @@ point total. That is, they are all or nothing.
     should be refactored to include propor looping constructs and/or broken
     up into smaller methods to improve readability. 
 
-* **Javadoc Documentation (25 points):** Each method and class needs to be fully
+* **(25 points) Javadoc Documentation:** Each method and class needs to be fully
   documented using Javadoc comments. Your comment should provide a description
   of the method's functionality in the first sentence of the comment.  This sentence
   needs to be a gramatically correct English sentence with proper punctuation. Further 
@@ -257,7 +257,7 @@ point total. That is, they are all or nothing.
   More information about Javadoc can be found
   [here](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javadoc.html).
 
-* **In-line Documentation (25 points):** Code blocks should be adequately documented
+* **(25 points) In-line Documentation:** Code blocks should be adequately documented
   using in-line comments. This is especially necessary when a block of code
   is not immediately understood by a reader (e.g., yourself or the grader).
 
