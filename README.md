@@ -130,16 +130,16 @@ avoid redundancy and promote code reuse within an implementation.
   ```T[]```, but Java does not allow the creation of generic arrays. The 
   ```Box<T>``` class provides a generic static method for the creation of arrays
   with type ```Box<T>[]```. The ```Box<T>``` class is  provided to you in 
-  <a href="src/main/java/cs1302/p3/Box.java">```cs1302.p3.Box```</a>.
+  <a href="src/main/java/cs1302/lists/Box.java">```cs1302.lists.Box```</a>.
   The HTML documention for the ```Box<T>``` class is available 
-  <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html">here</a>.
+  <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/lists/Box.html">here</a>.
   Since users of an ADT implementation do not interact with the underlying
   storage directly (and only through the methods defined in the interface),
   this non-functional requirement is transparent to users. However, using an
   array of generic "boxes", each containing an element of type ```T```, does increase
   the level of abstraction for the implementor.  To create an array of type 
   ```Box<T>[]``` use the static 
-  <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/p3/Box.html#array-int-">```array```</a>
+  <a href="http://cobweb.cs.uga.edu/~mec/cs1302/lists-apidocs/cs1302/lists/Box.html#array-int-">```array```</a>
   method. Since, in this project,  a list implementation is using its internal 
   array as storage for its elements, the internal array capacity must always be at 
   least the size of the list that uses it. You should grow and shrink the array 
@@ -159,14 +159,14 @@ avoid redundancy and promote code reuse within an implementation.
 
 This project will be graded using unit tests that will not be made available
 before the project deadline. It is paramount that you do not modify the
-<code>List</code> interface provided by the project's skeleton code in any
+<code>GenList</code> interface provided by the project's skeleton code in any
 way. It is also very important that you follow the package and naming
-conventions for the <code>ArrayList</code> and <code>SortedArrayList</code>
+conventions for the <code>ArrayGenList</code> and <code>SortedArrayGenList</code>
 classes described in this project description. Modifying the provided 
 interface and or not following the naming conventions outlined in this
 project description will cause the unit tests to automatically fail. 
 
-TL;DR - Do not modify the provided interfaces and classes; Follow naming 
+*TL;DR* - Do not modify the provided interfaces and classes; Follow naming 
 conventions. **If not, then your project will not be graded.**
 
 ## Getting/Updating Skeleton Code
@@ -244,23 +244,22 @@ Below are some frequently asked questions related to this project.
 2. **How do I determine the type of ```Object list``` in the ```equals(Object)``` method?**
 
    Ideally, you would check that ```list``` is an instance of ```List<T>```.
-   However, Java does not allow this since any ```List<T>``` gets erased to
-   ```List``` during type erasure due to the involvement of a generic type 
+   However, Java does not allow this since any ```GenList<T>``` gets erased to
+   ```GenList``` during type erasure due to the involvement of a generic type 
    parameter. Instead, you need to check if ```list``` is an instance of the 
    raw type ```List```. This will result in all elements being of ```list```
    being treated as type ```Object```, regardless of their actual type. This
    is perfectly okay since you will be performing equality tests between
    elements of the current list and ```list``` using the ```equals(Object)```
    method. This also means that ```list``` can be an object of any 
-   implementation of the ```List<T>``` interface. It does not have to the
+   implementation of the ```GenList<T>``` interface. It does not have to the
    same implementation as the calling object.
 
-   If ```list instanceof List``` is ```true```, then it is safe to cast the
-   reference to a ```List``` (e.g., ```List l = (List) list```). This will
+   If ```list instanceof GenList``` is ```true```, then it is safe to cast the
+   reference to a ```GenList``` (e.g., ```GenList l = (GenList) list```). This will
    give you access to the ```get(int)``` method via the casted reference
    (e.g., ```l.get(0)```) for, potentially, the purpose of comparing it to
    an element in the current list in the same position.
-
 
 3. **How do I include the interface's Javadoc for a method in addition to my own without copy/paste?**
 
