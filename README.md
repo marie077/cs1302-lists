@@ -1,15 +1,18 @@
-# CSCI 1302 - Lists
+# CSCI 1302 - Lists v2018.fa
+
+![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
 This document contains the description for the Lists project
-assigned to the students in the Spring 2018 CSCI 1302 classes
+assigned to the students in the Fall 2018 CSCI 1302 classes
 at the University of Georgia.
 
-**Read the entirety of this file before
-beginning your project.** 
+**Read the entirety of this file before beginning your project.**
+
+**Seriously. Read this entire file *before* starting.**
 
 ## Due Dates
 
-This project is **DUE FRI 2018-03-09 @ 11:55 PM EST**.
+This project is **DUE TBD @ 11:55 PM EST**.
 
 ## Academic Honesty
 
@@ -28,8 +31,8 @@ through **Piazza** and **eLC** so please keep a lookout for them.
 ## Project Description
 
 In this project, you will be providing two different implementations of
-a generic ```List``` interface, which defines different operations that one
-should be able to do with a *list*. A list is simply an object that represents 
+a generic ```GenList``` interface, which defines different operations that one
+should be able to do with a *generic list*. A list is simply an object that represents 
 an ordered collection of elements. The list implementation can decide how the
 elements are stored internally so long as users are able to interact with
 those elements via the methods defined in the interface. In this way, a list
@@ -284,7 +287,7 @@ Have a question? Please post it on the course Piazza.
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 <small>
-Copyright &copy; 2017-2018 Michael E. Cotterell and the University of Georgia.
+Copyright &copy; Michael E. Cotterell and the University of Georgia.
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a> to students and the public.
 The content and opinions expressed on this Web page do not necessarily reflect the views of nor are they endorsed by the University of Georgia or the University System of Georgia.
 </small>
