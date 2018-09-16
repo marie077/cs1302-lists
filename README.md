@@ -24,6 +24,8 @@ at the University of Georgia.
 * [Submission Instructions](#submission-instructions)
 * [Appendix - FAQ](#appendix---faq)
 
+## Academic Honesty
+
 You agree to the Academic Honesty policy as outlined in the course syllabus. 
 In accordance with this notice, I must caution you **not** to 
 fork this repository on GitHub if you have an account. Doing so will more than
