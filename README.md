@@ -94,7 +94,7 @@ There will be no partial credit for any of the requirements that simply
 require the presence of a method related a particular functionality. 
 The actual functionality is tested using test cases.
 
-* **```ArrayGenList<T>```:** Create the ```cs1302.p3.ArrayGenList``` generic class
+* **```ArrayGenList<T>```:** Create the ```cs1302.lists.ArrayGenList``` generic class
   with type parameter ```T``` such that it properly implements the 
   ```cs1302.lists.GenList<T>``` interface with the requirements listed below.
 
