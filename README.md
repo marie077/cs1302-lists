@@ -108,7 +108,7 @@ The actual functionality is tested using test cases.
     actual internal array capacity. 
 
   * **Extra Credit (5 points):** Override the ```iterator()``` method for your
-    ```ArrayGenList``` class as described in the ```List``` interface. This may 
+    ```ArrayGenList``` class as described in the ```GenList``` interface. This _may_ 
     require you to create an additional class that implements another interface.
 
     **NOTE:** You do not need to implement the ```iterator()``` method if you
@@ -138,11 +138,17 @@ The actual functionality is tested using test cases.
 
   * **Extra Credit (5 points):** Override the ```iterator()``` method for your
     ```SortedArrayList``` class as described in the ```GenList``` interface. This 
-    may require you to create an additional class that implements another 
+    _may_ require you to create an additional class that implements another 
     interface.
 
     **NOTE:** You do not need to implement the ```iterator()``` method if you
     are not doing the extra credit.
+    
+* **(100 points) Test Cases**: The bulk of this project will be graded
+  based on 50 JUnit test cases, each worth 2 points. This is the same as
+  someone using the classes you wrote bases purely on the interface
+  definitions. If you implement the interface correctly, then you should
+  pass the associated test cases. 
 
 ### Non-Functional Requirements
 
