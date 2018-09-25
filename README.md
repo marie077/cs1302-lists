@@ -295,10 +295,18 @@ files into sub-directory within your present working directory:
 
 ```
 $ git clone https://github.com/cs1302uga/cs1302-lists.git
+$ chmod ugo-w cs1302-lists/src/main/java/cs1302/lists/Box.java
+$ chmod ugo-w cs1302-lists/src/main/java/cs1302/lists/GenList.java
 ```
 
 This should create a directory called <code>cs1302-lists</code> in
 your present working directory that contains the project files.
+
+Furthermore, the `chmod` command removed write permission from two files that
+you are not allowed to modify. If you modify the contents of these files in
+any way, then your project will not be graded. Removing write permission, while
+not technically required, is a safe way to prevent yourself from making changes
+to the contents of those files by accident. 
 
 If any updates to the project files are announced by your instructor, you can
 merge those changes into your copy by changing into your project's directory
