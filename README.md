@@ -76,6 +76,11 @@ users will use them (even if declared with ```public``` visibility), since
 they are not defined in the interface. These additional methods may help
 avoid redundancy and promote code reuse within an implementation.
 
+### Suggested Reading
+
+* LDC Ch. 9 (Polymorhism)
+* [Java Tutorial: Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+
 ### Learning Outcomes
 
 * Implement generic classes according to an interface (1302-LO1).
