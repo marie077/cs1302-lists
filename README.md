@@ -2,7 +2,7 @@
 
 ![Unrelated image from page 177 of "Punch" (1841)](https://i.imgur.com/7TdqL1v.jpg)
 
-**DUE TBD @ 11:55 PM EST**.
+**FRI 2018-10-12 (OCT 12) @ 11:55 PM EST**.
 
 This document contains the description for the Lists project
 assigned to the students in the Fall 2018 CSCI 1302 classes
