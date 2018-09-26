@@ -307,7 +307,7 @@ $ chmod ugo-w cs1302-lists/src/main/java/cs1302/lists/GenList.java
 This should create a directory called <code>cs1302-lists</code> in
 your present working directory that contains the project files. This
 directory is an already-setup Maven project. To compile your code, 
-simlpy type the following command while in top level of the 
+simply type the following command while in top level of the 
 <code>cs1302-lists</code> directory:
 
 ```
