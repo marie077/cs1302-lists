@@ -421,6 +421,25 @@ Below are some frequently asked questions related to this project.
 
    It is common practice to include the more specific documentation first, 
    followed by more general documentation, if needed.
+   
+4. **Can I technically implement the methods first before I implement them correctly?**
+
+   You may wish to write out the method signatures for the methods you are
+   implementing from the interface with empty bodies in an attempt to get started.
+   You will quickly discover that the methods that have a non-void return
+   value actually need to return something. If you don't put a return statement,
+   then this complicates trying to compile and test one method at a time.
+   
+   It is possible to _temporarily_ include a `throw` statement in the method
+   until you commit to writing the return statement. I reccommend throwing
+   an instance of [`UnsupportedOperationException`](https://docs.oracle.com/javase/8/docs/api/java/lang/UnsupportedOperationException.html)
+   if you choose to do this. For example, you might write something like this for the `get(int)`
+   method:
+   ```
+   public T get(int index) throws IndexOutOfBoundsException {
+       throw new UnsupportedOperationException("not yet implemented");
+   } // get
+   ```
 
 Have a question? Please post it on the course Piazza.
 
