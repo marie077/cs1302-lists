@@ -305,7 +305,14 @@ $ chmod ugo-w cs1302-lists/src/main/java/cs1302/lists/GenList.java
 ```
 
 This should create a directory called <code>cs1302-lists</code> in
-your present working directory that contains the project files.
+your present working directory that contains the project files. This
+directory is an already-setup Maven project. To compile your code, 
+simlpy type the following command while in top level of the 
+<code>cs1302-lists</code> directory:
+
+```
+$ mvn compile
+```
 
 Furthermore, the `chmod` command removed write permission from two files that
 you are not allowed to modify. If you modify the contents of these files in
