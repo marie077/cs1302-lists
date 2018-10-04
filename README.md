@@ -132,6 +132,12 @@ The actual functionality is tested using test cases.
     elements are added to the list in sorted order, regardless of the index 
     position specified. The Javadoc documentation for these methods should 
     clearly indicate this behavior.
+    
+  * The ```set(int, T)``` method should behave almost the same as it does
+    for the ```ArrayGenList``` implementation, except that after the
+    position is set, the list should rearrange itself to maintain its sorted 
+    property. The Javadoc documentation for this methods should 
+    clearly indicate this behavior. 
 
   * You must explicitly define a default constructor for this class. The
     initial size of a ```SortedArrayGenList<T>``` is ```0``` regardless of your
