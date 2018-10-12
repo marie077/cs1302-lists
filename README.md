@@ -124,7 +124,7 @@ The actual functionality is tested using test cases.
   ```T``` such that it properly implements the ```cs1302.lists.GenList<T>``` 
   interface with the requirements listed below. 
 
-  * The generic type parameter is bounded by ```java.util.Comparable<T>```
+  * The generic type parameter is bounded by ```java.lang.Comparable<T>```
     in order to enable comparisons between existing and or prospective 
     elements of the list.
 
