@@ -200,7 +200,7 @@ point total. That is, they are all or nothing.
   process as needed. 
   
 * **(100 points) Project Directory Structure:** The location of the default
-  package for the source code should be a direct subdirectory called `src`.
+  package for the source code should be a direct subdirectory called `src/main/java`.
   When the project is compiled using Maven, the the default package for compiled 
   code should be `target/classes`. 
   
